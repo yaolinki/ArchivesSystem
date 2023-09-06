@@ -29,6 +29,11 @@ public class test {
         log.info("已经调用接口");
         log.info("已经调用接口");
 
+        System.out.println("hello");
+        System.out.println("hello");
+        System.out.println("hello");
+        System.out.println("hello");
+
 
         System.out.println();
         //JSONUtils.toJSONString()
