@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -11,6 +12,11 @@ public class test3 {
         ReentrantLock lock = new ReentrantLock();
         Condition condition = lock.newCondition();
 
+        AtomicInteger atomicInteger = new AtomicInteger();
+        atomicInteger.updateAndGet((value)->{
+            value+=10;
+          return value;
+        });
     }
 }
 
